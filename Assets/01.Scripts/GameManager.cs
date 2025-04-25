@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    private static GameManager m_instance;
+    private static GameManager m_instance;//m=¸É¹öº¯¼ö
     private int score = 0;
     public bool isGameover { get; private set; }
     void Awake()
@@ -41,7 +41,7 @@ public void Addscore(int newScore)
         if(!isGameover)
         {
             score += newScore;
-            UIManager.instance.updateScoreText(score);
+            UIManager.instance.UpdateScoreText(score);
             
         }
 
