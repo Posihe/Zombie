@@ -52,7 +52,7 @@ public class ItemSpawner : MonoBehaviour
         GameObject item = Instantiate(selectedItem, spawnPosition, Quaternion.identity);
 
         // 생성된 아이템을 5초 뒤에 파괴
-        Destroy(item);
+        Destroy(item, 5f);
     }
 
     // 내비메시 위의 랜덤한 위치를 반환하는 메서드

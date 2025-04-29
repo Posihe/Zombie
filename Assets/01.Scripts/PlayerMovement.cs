@@ -52,12 +52,5 @@ public class PlayerMovement : MonoBehaviour
             playerRigidbody.rotation * Quaternion.Euler(0, turn, 0);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        IItem item = other.GetComponent<IItem>();
-        if(item != null)
-        {
-            item.Use(gameObject);
-        }
-    }
+    
 }
